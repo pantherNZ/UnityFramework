@@ -1,0 +1,402 @@
+* {
+    -unity-font-definition: resource("Graphics/Fonts/oxanium/Oxanium-Medium-NQ");
+    font-size: 18px;
+}
+
+.GenericButton > .GenericButtonFrame {
+    border-color: rgb(128, 128, 128);
+    border-width: 1px;
+    border-radius: 2px;
+    margin: -9px;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    right: 9px;
+    bottom: 9px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out-cubic;
+}
+
+.GenericButton:hover {
+    cursor: resource("UI/Images/Cursor/click_cursor");
+}
+
+.GenericButton:hover > .GenericButtonFrame {
+    border-color: rgb(64, 128, 64);
+    border-width: 2px;
+    margin: -6px;
+}
+
+.GenericButton.Selected > .GenericButtonFrame {
+    border-color: rgb(64, 128, 64);
+    border-width: 2px;
+    margin: -6px;
+}
+
+Label {
+    color: rgb(200, 200, 200);
+}
+
+.Hide {
+    display: none;
+    visibility: hidden;
+}
+
+.Invisible {
+    visibility: hidden;
+}
+
+.Opaque {
+    opacity: 1;
+}
+
+.Transparent {
+    opacity: 0;
+}
+
+.GenericButton {
+    border-width: 0;
+    border-radius: 2px;
+    margin: 0;
+    padding: 9px;
+    color: rgb(200, 200, 200);
+    background-color: rgb(32, 32, 32);
+    min-width: 64px;
+    min-height: 36px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out-cubic;
+    background-image: resource("UI/Images/Background/bg_sqaure_hull_384");
+    -unity-background-scale-mode: scale-and-crop;
+    -unity-background-image-tint-color: rgb(150, 150, 150);
+}
+
+.MainWindow {
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    border-color: rgb(128, 128, 128);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: rgb(32, 32, 32);
+    background-image: resource("UI/Images/Background/ui_bank_bg");
+    -unity-background-image-tint-color: rgb(32, 32, 32);
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.Frame128 {
+    width: 128px;
+    height: 128px;
+    max-width: 128px;
+    max-height: 128px;
+}
+
+.Frame192 {
+    width: 192px;
+    height: 192px;
+    max-width: 192px;
+    max-height: 192px;
+}
+
+.Frame256 {
+    width: 256px;
+    height: 256px;
+    max-width: 256px;
+    max-height: 256px;
+}
+
+.Frame512 {
+    width: 512px;
+    height: 512px;
+    max-width: 512px;
+    max-height: 512px;
+}
+
+.PopupMinSize {
+    min-width: 480px;
+    min-height: 320px;
+}
+
+.CenteredLabel {
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.BackgroundRepeat {
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.unity-list-view__item:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+Button > * > .CurrencyButtonFrame {
+    border-color: rgb(32, 32, 32);
+    border-width: 2px;
+    border-radius: 2px;
+    margin: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out-cubic;
+}
+
+Button:hover > * > .CurrencyButtonFrame {
+    border-color: rgb(200, 200, 200);
+    border-width: 4px;
+    margin: 0;
+}
+
+Button:hover:disabled > * > .CurrencyButtonFrame {
+    border-color: rgb(32, 32, 32);
+    border-width: 2px;
+    border-radius: 2px;
+    margin: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ClosePopupButton {
+    border-width: 1px;
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+    border-color: rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
+    background-color: rgb(32, 32, 32);
+    width: 20px;
+    height: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out-cubic;
+}
+
+.ClosePopupButton:hover {
+    cursor: resource("UI/Images/Cursor/click_cursor");
+    background-color: rgb(132, 32, 32);
+}
+
+.ClosePopupBackground:hover {
+    cursor: resource("UI/Images/Cursor/click_cursor");
+}
+
+.AffixCraftCell {
+    flex-grow: 1;
+    margin-top: -1px;
+    width: 12px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(200, 200, 200);
+    border-right-color: rgb(200, 200, 200);
+    border-top-color: rgb(200, 200, 200);
+    border-bottom-color: rgb(200, 200, 200);
+}
+
+.LightText {
+    color: rgb(200, 200, 200);
+}
+
+.GreenText {
+    color: rgb(180, 255, 180);
+}
+
+.RedText {
+    color: rgb(255, 180, 180);
+}
+
+.LightTint {
+    -unity-background-image-tint-color: rgb(200, 200, 200);
+}
+
+.GreenTint {
+    -unity-background-image-tint-color: rgb(180, 255, 180);
+}
+
+.RedTint {
+    -unity-background-image-tint-color: rgb(255, 180, 180);
+}
+
+.FadeOut {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+}
+
+.AbsoluteZero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.OutpostPageTitle {
+    display: flex;
+    -unity-text-outline-color: rgb(238, 0, 255);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    -unity-text-outline-width: 0;
+    text-shadow: 5px 0 10px rgb(0, 0, 0);
+    letter-spacing: 0;
+    height: 48px;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    -unity-text-align: middle-left;
+    width: 128px;
+}
+
+.OutpostPageHeader {
+    padding-bottom: 2px;
+}
+
+.Toast {
+    flex-grow: 0;
+    background-image: resource("UI/Images/ui_background_invert");
+    -unity-background-scale-mode: scale-and-crop;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.06);
+    max-width: 480px;
+    min-height: auto;
+    transition-duration: 2s;
+    opacity: 0.75;
+    margin-left: 96px;
+}
+
+.Toast_End {
+    transition-duration: 2s;
+    opacity: 0;
+    margin-bottom: 256px;
+}
+
+.InfoButtonSupplement {
+    min-width: 36px;
+    -unity-font-style: bold;
+    padding-bottom: 7px;
+}
+
+.Surface {
+    flex-grow: 1;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.SurfaceCanvas {
+    flex-grow: 1;
+    position: absolute;
+    align-self: center;
+}
+
+.HighlightFrame {
+    flex-grow: 1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    background-color: rgb(236, 190, 41);
+}
+
+.HighlightFrame_Pulse {
+    transition-duration: 1s;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    transition-timing-function: ease-out-cubic;
+    opacity: 0;
+}
+
+.HorizontalSeparator {
+    flex-grow: 0;
+    width: 60%;
+    align-self: center;
+    height: 1px;
+    background-color: rgb(200, 200, 200);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.MainWindow .unity-collection-view__item:hover {
+    background-color: rgba(60, 149, 48, 0);
+    -unity-background-image-tint-color: rgba(60, 149, 48, 0);
+}
+
+.MainWindow .unity-collection-view__item--selected {
+    background-color: rgba(60, 149, 48, 0);
+    -unity-background-image-tint-color: rgba(60, 149, 48, 0);
+}
+
+.MainWindow .unity-collection-view__item--selected:hover {
+    background-color: rgba(60, 149, 48, 0);
+    -unity-background-image-tint-color: rgba(60, 149, 48, 0);
+}
+
+.MainWindow .unity-base-field__input:hover {
+    background-color: rgba(60, 149, 48, 0);
+    -unity-background-image-tint-color: rgba(60, 149, 48, 0);
+    border-left-color: rgb(60, 149, 48);
+}
+
+.MainWindow .unity-base-field__input--selected {
+    background-color: rgba(60, 149, 48, 0);
+    -unity-background-image-tint-color: rgba(60, 149, 48, 0);
+    border-left-color: rgba(60, 149, 48, 0);
+}
+
+.MainWindow .unity-base-popup-field__input:hover {
+    background-color: rgba(60, 149, 48, 0);
+    -unity-background-image-tint-color: rgba(60, 149, 48, 0);
+    border-left-color: rgb(60, 149, 48);
+}
+
+.MainWindow .unity-base-popup-field__input--selected {
+    background-color: rgba(60, 149, 48, 0);
+    -unity-background-image-tint-color: rgba(60, 149, 48, 0);
+    border-left-color: rgba(60, 149, 48, 0);
+}
+
+.MainWindow .unity-popup-field__input:hover {
+    background-color: rgba(60, 149, 48, 0);
+    -unity-background-image-tint-color: rgba(60, 149, 48, 0);
+    border-left-color: rgb(60, 149, 48);
+}
+
+.MainWindow .unity-popup-field__input--selected {
+    background-color: rgba(60, 149, 48, 0);
+    -unity-background-image-tint-color: rgba(60, 149, 48, 0);
+    border-left-color: rgba(60, 149, 48, 0);
+}
+
+.EquipmentFilter {
+    -unity-font-style: normal;
+    background-image: resource("UI/Images/icon_filter");
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(200, 200, 200);
+    background-position-x: right 210px;
+    align-self: center;
+    width: 256px;
+}

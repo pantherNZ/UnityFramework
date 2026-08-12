@@ -1,0 +1,169 @@
+* {
+    cursor: resource('UI/Images/Cursor/normal_cursor');
+    -unity-font-definition: resource('Graphics/Fonts/oxanium/Oxanium-Medium-NQ');
+    font-size: 18px;
+}
+
+#unity-drag-container #unity-tracker {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(200, 200, 200);
+}
+
+#unity-high-button {
+    background-image: resource('UI/Images/UiTk/scroll_bar_down_arrow');
+    -unity-background-image-tint-color: rgb(200, 200, 200);
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(200, 200, 200);
+}
+
+#unity-low-button {
+    background-image: resource('UI/Images/UiTk/scroll_bar_up_arrow');
+    -unity-background-image-tint-color: rgb(200, 200, 200);
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(200, 200, 200);
+}
+
+#unity-dragger {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(200, 200, 200);
+}
+
+Label {
+    color: rgb(200, 200, 200);
+}
+
+.unity-base-field__label {
+    flex-grow: 1;
+    min-width: auto;
+    color: rgb(200, 200, 200);
+    -unity-text-align: middle-right;
+    margin: 0px;
+    padding: 4px;
+}
+
+.unity-base-field:focus:enabled > .unity-base-field__label {
+    color: rgb(200, 200, 200);
+}
+
+.unity-base-field__input {
+    min-width: 196px;
+}
+
+.unity-base-popup-field__input {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(200, 200, 200);
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgb(200, 200, 200);
+    margin: 2px;
+    padding: 2px;
+}
+
+DropdownField:focus .unity-base-field__input.unity-base-popup-field__input.unity-popup-field__input {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(200, 200, 200);
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgb(200, 200, 200);
+    margin: 2px;
+    padding: 2px;
+}
+
+DropdownField:hover .unity-base-field__input.unity-base-popup-field__input.unity-popup-field__input {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(60, 149, 48);  
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgb(200, 200, 200);
+    margin: 2px;
+    padding: 2px;
+}
+
+DropdownField:selected .unity-base-field__input.unity-base-popup-field__input.unity-popup-field__input {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(60, 149, 48);  
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgb(200, 200, 200);
+    margin: 2px;
+    padding: 2px;
+}
+
+.unity-base-popup-field:active:enabled > .unity-base-popup-field__input {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(200, 200, 200);
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgb(200, 200, 200);
+    margin: 2px;
+    padding: 2px;
+}
+
+.unity-base-popup-field__text {
+    margin-right: 4px;
+}
+
+.unity-base-popup-field__arrow {
+    -unity-background-image-tint-color: rgb(200, 200, 200);
+}
+
+.unity-base-dropdown__container-inner {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(200, 200, 200);
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgb(200, 200, 200);
+    padding: 2px;
+}
+
+.unity-toggle__checkmark {
+    background-color: rgb(32, 32, 32);
+    -unity-background-image-tint-color: rgb(200, 200, 200);
+    border-color: rgb(200, 200, 200);
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgb(200, 200, 200);
+    padding: 2px;
+    flex-grow: 0;
+}
+
+.unity-toggle > .unity-toggle__input:checked > .unity-toggle__checkmark {
+    border-color: rgb(200, 200, 200);
+}
+
+Toggle.unity-toggle:hover > .unity-toggle__input > #unity-checkmark.unity-toggle__checkmark {
+    border-color: rgb(141, 197, 196);
+}
+
+TextInput#unity-text-input {
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(200, 200, 200);
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgb(200, 200, 200);
+    padding: 2px;
+}
+
+TextField:hover > TextInput#unity-text-input {
+    border-color: rgb(141, 197, 196);
+}
+
+TextElement {
+    color: rgb(200, 200, 200);
+}
+
+.unity-list-view__item:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-base-dropdown__label {
+    white-space: normal;
+}
+
+.unity-base-dropdown__appendix {
+    min-width: 4px;
+}
+
+Button:hover {
+    cursor: resource('UI/Images/Cursor/click_cursor');
+}

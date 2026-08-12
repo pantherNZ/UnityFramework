@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/USS/Generic.uss?fileID=7433441132597879392&amp;guid=e4f83095688ebe4458fed2d798d1b0eb&amp;type=3#Generic"/>
+    <engine:VisualElement picking-mode="Ignore" name="VisualElement" style="flex-grow: 1; position: absolute; top: 0; right: 0; left: 0; bottom: 0;">
+        <engine:VisualElement name="Pulse" picking-mode="Ignore" class="HighlightFrame"/>
+    </engine:VisualElement>
+</engine:UXML>

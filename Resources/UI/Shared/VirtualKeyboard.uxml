@@ -1,0 +1,69 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <!-- Stylesheet is applied programmatically by VirtualKeyboardController -->
+    <ui:VisualElement name="VKRoot" class="vk-root" picking-mode="Ignore">
+        <ui:VisualElement name="VirtualKeyboardPanel" class="vk-panel">
+            <ui:VisualElement class="vk-header">
+                <ui:Label name="VKFieldLabel" class="vk-field-label" text=""/>
+            </ui:VisualElement>
+            <ui:VisualElement class="vk-display-row">
+                <ui:Label name="VKDisplay" class="vk-display" text="│"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="vk-rows">
+                <!-- Row 0: numbers -->
+                <ui:VisualElement name="vk-row-0" class="vk-row">
+                    <ui:Button name="key-1" text="1" class="vk-key"/>
+                    <ui:Button name="key-2" text="2" class="vk-key"/>
+                    <ui:Button name="key-3" text="3" class="vk-key"/>
+                    <ui:Button name="key-4" text="4" class="vk-key"/>
+                    <ui:Button name="key-5" text="5" class="vk-key"/>
+                    <ui:Button name="key-6" text="6" class="vk-key"/>
+                    <ui:Button name="key-7" text="7" class="vk-key"/>
+                    <ui:Button name="key-8" text="8" class="vk-key"/>
+                    <ui:Button name="key-9" text="9" class="vk-key"/>
+                    <ui:Button name="key-0" text="0" class="vk-key"/>
+                </ui:VisualElement>
+                <!-- Row 1: qwerty -->
+                <ui:VisualElement name="vk-row-1" class="vk-row">
+                    <ui:Button name="key-q" text="q" class="vk-key"/>
+                    <ui:Button name="key-w" text="w" class="vk-key"/>
+                    <ui:Button name="key-e" text="e" class="vk-key"/>
+                    <ui:Button name="key-r" text="r" class="vk-key"/>
+                    <ui:Button name="key-t" text="t" class="vk-key"/>
+                    <ui:Button name="key-y" text="y" class="vk-key"/>
+                    <ui:Button name="key-u" text="u" class="vk-key"/>
+                    <ui:Button name="key-i" text="i" class="vk-key"/>
+                    <ui:Button name="key-o" text="o" class="vk-key"/>
+                    <ui:Button name="key-p" text="p" class="vk-key"/>
+                </ui:VisualElement>
+                <!-- Row 2: asdf -->
+                <ui:VisualElement name="vk-row-2" class="vk-row">
+                    <ui:Button name="key-a" text="a" class="vk-key"/>
+                    <ui:Button name="key-s" text="s" class="vk-key"/>
+                    <ui:Button name="key-d" text="d" class="vk-key"/>
+                    <ui:Button name="key-f" text="f" class="vk-key"/>
+                    <ui:Button name="key-g" text="g" class="vk-key"/>
+                    <ui:Button name="key-h" text="h" class="vk-key"/>
+                    <ui:Button name="key-j" text="j" class="vk-key"/>
+                    <ui:Button name="key-k" text="k" class="vk-key"/>
+                    <ui:Button name="key-l" text="l" class="vk-key"/>
+                </ui:VisualElement>
+                <!-- Row 3: zxcv + space -->
+                <ui:VisualElement name="vk-row-3" class="vk-row">
+                    <ui:Button name="key-z" text="z" class="vk-key"/>
+                    <ui:Button name="key-x" text="x" class="vk-key"/>
+                    <ui:Button name="key-c" text="c" class="vk-key"/>
+                    <ui:Button name="key-v" text="v" class="vk-key"/>
+                    <ui:Button name="key-b" text="b" class="vk-key"/>
+                    <ui:Button name="key-n" text="n" class="vk-key"/>
+                    <ui:Button name="key-m" text="m" class="vk-key"/>
+                    <ui:Button name="key-space" text="space" class="vk-key vk-key--space"/>
+                </ui:VisualElement>
+                <!-- Row 4: backspace + enter -->
+                <ui:VisualElement name="vk-row-4" class="vk-row">
+                    <ui:Button name="key-backspace" text="&#x232B; delete" class="vk-key vk-key--action"/>
+                    <ui:Button name="key-enter" text="enter &#x21B5;" class="vk-key vk-key--action vk-key--enter"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

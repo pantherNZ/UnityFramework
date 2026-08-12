@@ -1,0 +1,4 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/USS/Generic.uss?fileID=7433441132597879392&amp;guid=e4f83095688ebe4458fed2d798d1b0eb&amp;type=3#Generic"/>
+    <engine:Button text="X" name="Close" class="ClosePopupButton" style="min-width: 20px; min-height: 20px; max-height: 20px; max-width: 20px;"/>
+</engine:UXML>

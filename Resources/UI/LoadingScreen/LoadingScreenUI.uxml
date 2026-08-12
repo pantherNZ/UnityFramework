@@ -1,0 +1,27 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/USS/Generic.uss?fileID=7433441132597879392&amp;guid=e4f83095688ebe4458fed2d798d1b0eb&amp;type=3#Generic"/>
+    <Style src="project://database/Assets/Resources/UI/USS/Loading.uss?fileID=7433441132597879392&amp;guid=95511eb579e732f4a8e6c1f5691049d8&amp;type=3#Loading"/>
+    <engine:VisualElement name="VisualElement" style="background-color: rgb(24, 24, 24); flex-grow: 1; background-image: resource(&quot;UI/Images/Background/dark_cave_and_pylon&quot;); -unity-background-scale-mode: scale-and-crop;">
+        <engine:VisualElement name="VisualElement" style="background-image: resource(&quot;UI/Images/Background/nq_logo&quot;); -unity-background-scale-mode: scale-to-fit; height: 256px; align-self: flex-end; width: 256px;"/>
+        <engine:VisualElement name="VisualElement" style="bottom: 96px; right: 96px; top: auto; left: auto; overflow: visible; -unity-text-align: middle-center; white-space: normal; margin-top: 0; position: absolute;">
+            <engine:VisualElement style="flex-grow: 1;">
+                <engine:VisualElement name="Bar1" class="LoadingBar plop"/>
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1; rotate: 60deg;">
+                <engine:VisualElement name="Bar2" class="LoadingBar"/>
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1; rotate: 120deg;">
+                <engine:VisualElement name="Bar3" class="LoadingBar"/>
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1; rotate: 180deg;">
+                <engine:VisualElement name="Bar4" class="LoadingBar"/>
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1; rotate: 240deg;">
+                <engine:VisualElement name="Bar5" class="LoadingBar"/>
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1; rotate: 300deg;">
+                <engine:VisualElement name="Bar6" class="LoadingBar"/>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

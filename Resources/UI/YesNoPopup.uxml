@@ -1,0 +1,25 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="ClosePopup" src="project://database/Assets/Resources/UI/ClosePopup.uxml?fileID=9197481963319205126&amp;guid=c5fc8589097b3534ea3cbb1b100181d8&amp;type=3#ClosePopup"/>
+    <Style src="project://database/Assets/Resources/UI/USS/Generic.uss?fileID=7433441132597879392&amp;guid=e4f83095688ebe4458fed2d798d1b0eb&amp;type=3#Generic"/>
+    <engine:VisualElement class="PopupMinSize MainWindow" style="flex-grow: 0; background-image: resource(&quot;UI/Images/ui_background_invert&quot;); -unity-background-scale-mode: scale-and-crop; -unity-background-image-tint-color: rgba(255, 255, 255, 0.06); max-width: 480px; min-height: auto;">
+        <engine:VisualElement style="flex-grow: 1; background-image: resource(&quot;UI/Images/ui_background_invert_wide&quot;); -unity-background-scale-mode: scale-and-crop; -unity-background-image-tint-color: rgba(218, 252, 255, 0.13); height: 48px; margin-top: -4px; margin-right: -4px; margin-bottom: 0; margin-left: -4px;">
+            <engine:Label text="Header" name="Header" style="flex-grow: 1; -unity-text-align: middle-center; font-size: 20px;"/>
+            <engine:Instance template="ClosePopup" style="position: absolute; top: -1px; right: -1px; display: none;"/>
+        </engine:VisualElement>
+        <engine:VisualElement name="Image" style="flex-grow: 1; height: 128px; margin-right: -4px; margin-left: -4px; background-image: resource(&quot;UI/Images/Popup/popup_confirm_skill&quot;); -unity-background-scale-mode: scale-and-crop;">
+            <engine:VisualElement style="flex-grow: 1; background-image: resource(&quot;UI/Images/horizontal_double_gradient&quot;); -unity-background-image-tint-color: rgb(16, 16, 16); -unity-slice-top: 8; -unity-slice-bottom: 8;"/>
+        </engine:VisualElement>
+        <engine:Label text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." name="Prompt" style="flex-grow: 1; -unity-text-align: middle-center; min-height: 96px; white-space: normal;"/>
+        <engine:VisualElement style="flex-grow: 0; flex-direction: row; justify-content: space-evenly;">
+            <engine:Button text="Yes" name="Yes" class="GenericButton" style="flex-grow: 1; max-width: 128px;">
+                <engine:VisualElement class="GenericButtonFrame" style="flex-grow: 1;"/>
+            </engine:Button>
+            <engine:Button text="No" name="No" class="GenericButton" style="flex-grow: 1; max-width: 128px;">
+                <engine:VisualElement class="GenericButtonFrame" style="flex-grow: 1;"/>
+            </engine:Button>
+            <engine:Button text="Cancel" name="Cancel" class="GenericButton" style="flex-grow: 1; max-width: 128px;">
+                <engine:VisualElement class="GenericButtonFrame" style="flex-grow: 1;"/>
+            </engine:Button>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

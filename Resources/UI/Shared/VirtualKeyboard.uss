@@ -1,0 +1,165 @@
+/* ============================================================
+   Virtual Keyboard — UI Toolkit stylesheet
+   Applied programmatically by VirtualKeyboardController
+   ============================================================ */
+
+/* Full-screen transparent backdrop; doesn't block pointer input itself */
+.vk-root {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    align-items: center;
+    justify-content: flex-end;
+    /* pointer events fall through to the panel only */
+}
+
+/* Centred, max-width panel anchored to the bottom */
+.vk-panel {
+    width: 90%;
+    max-width: 820px;
+    background-color: rgba(14, 14, 18, 0.97);
+    transition-property: translate;
+    transition-duration: 320ms;
+    transition-timing-function: ease-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: rgba(255,255,255,0.10);
+    border-left-color: rgba(255,255,255,0.10);
+    border-right-color: rgba(255,255,255,0.10);
+}
+
+/* Field name label above the display */
+.vk-header {
+    margin-bottom: 4px;
+}
+
+.vk-field-label {
+    font-size: 11px;
+    color: rgba(180,200,255,0.6);
+    -unity-font-style: bold;
+    -unity-text-align: upper-left;
+}
+
+/* Current value display — looks like a text input */
+.vk-display-row {
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255,0.06);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(80,180,255,0.35);
+    border-right-color: rgba(80,180,255,0.35);
+    border-top-color: rgba(80,180,255,0.35);
+    border-bottom-color: rgba(80,180,255,0.35);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.vk-display {
+    color: white;
+    font-size: 18px;
+    -unity-text-align: middle-left;
+    min-height: 26px;
+}
+
+/* Key rows */
+.vk-rows {
+    flex-direction: column;
+}
+
+.vk-row {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* Individual key */
+.vk-key {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    max-width: 72px;
+    min-width: 28px;
+    height: 46px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
+    font-size: 15px;
+    color: rgba(255,255,255,0.90);
+    background-color: rgba(255,255,255,0.08);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(255,255,255,0.12);
+    border-right-color: rgba(255,255,255,0.12);
+    border-top-color: rgba(255,255,255,0.12);
+    border-bottom-color: rgba(255,255,255,0.12);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -unity-text-align: middle-center;
+    transition-property: background-color;
+    transition-duration: 0.08s;
+}
+
+.vk-key:hover {
+    background-color: rgba(255,255,255,0.16);
+}
+
+/* Focus state — highlighted by controller d-pad navigation */
+.vk-key:focus {
+    background-color: rgba(80,180,255,0.35);
+    border-left-color: rgba(80,180,255,0.85);
+    border-right-color: rgba(80,180,255,0.85);
+    border-top-color: rgba(80,180,255,0.85);
+    border-bottom-color: rgba(80,180,255,0.85);
+    color: white;
+}
+
+/* Wider space key */
+.vk-key--space {
+    max-width: 160px;
+    flex-grow: 2;
+}
+
+/* Action keys (backspace / enter) */
+.vk-key--action {
+    max-width: 240px;
+    flex-grow: 3;
+    font-size: 13px;
+    color: rgba(200,220,255,0.80);
+    background-color: rgba(80,180,255,0.12);
+    border-left-color: rgba(80,180,255,0.20);
+    border-right-color: rgba(80,180,255,0.20);
+    border-top-color: rgba(80,180,255,0.20);
+    border-bottom-color: rgba(80,180,255,0.20);
+}
+
+.vk-key--action:hover {
+    background-color: rgba(80,180,255,0.25);
+}
+
+.vk-key--action:focus {
+    background-color: rgba(80,180,255,0.50);
+}
+
+/* Enter key — slightly more prominent */
+.vk-key--enter {
+    color: white;
+    background-color: rgba(80,180,255,0.22);
+}
+
+.vk-key--enter:focus {
+    background-color: rgba(80,180,255,0.65);
+}
